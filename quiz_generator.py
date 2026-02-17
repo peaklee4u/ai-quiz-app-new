@@ -10,7 +10,7 @@ def generate_quiz(text_content, num_questions=5):
     """
     텍스트 내용을 바탕으로 퀴즈를 생성합니다.
     """
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 
     prompt = f"""
     당신은 교육 전문가입니다. 아래 제공된 텍스트 내용을 바탕으로 학습자의 이해도를 평가할 수 있는 객관식 퀴즈 {num_questions}개를 만들어주세요.
